@@ -2,6 +2,7 @@ package net.blay09.mods.waystones.compat;
 
 import java.util.List;
 
+import net.blay09.mods.waystones.Waystones;
 import net.blay09.mods.waystones.block.BlockWaystone;
 import net.blay09.mods.waystones.block.TileWaystone;
 import net.minecraft.entity.player.EntityPlayerMP;
@@ -9,6 +10,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumChatFormatting;
+import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 
 import mcp.mobius.waila.api.IWailaConfigHandler;
@@ -48,6 +50,9 @@ public class WailaProvider {
             }
             if (tileEntity instanceof TileWaystone) {
                 list.add(EnumChatFormatting.DARK_AQUA + ((TileWaystone) tileEntity).getWaystoneName());
+            }
+            if (Waystones.getConfig().disableWaystoneDrops) {
+                list.add(StatCollector.translateToLocal("waila.non-harvestable-block.desc"));
             }
             return list;
         }

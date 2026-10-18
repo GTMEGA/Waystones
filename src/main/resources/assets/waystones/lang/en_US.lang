@@ -20,6 +20,8 @@ waystones:waystonesGlobalCreativeOnly=§cActivating §eGlobal Waystones §cis re
 waystones:waystoneTooFar=§cThis Waystone is too far!
 waystones:renameCreativeOnly=§cRenaming Waystones is reserved for creative players.
 
+waila.non-harvestable-block.desc=§4Not Harvestable!
+
 gui.waystones:warpStone.selectDestination=Select your destination:
 gui.waystones:warpStone.title=§5Warp Stone
 gui.waystones:guiButton.title=§bWarp Scroll

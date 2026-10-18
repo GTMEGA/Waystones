@@ -316,8 +316,8 @@ public class WaystoneConfig {
         disableWaystoneDrops = config.getBoolean(
             "disableWaystoneDrops",
             Categories.general,
-            false,
-            "If true, waystones will not drop as an item when mined (including Silk Touch).");
+            true,
+            "If true, waystones will not drop as an item when mined (including Silk Touch). Drops disabled by default to prevent pillaging of natural waystones.");
 
         sandyWaystonePathBlocks = config.getStringList(
             "sandyWaystonePathBlocks",
