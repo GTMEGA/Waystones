@@ -1,4 +1,6 @@
-# Waystones-X (Unofficial Waystones Fork)
+# Don't contribute here, this is for MEGA's archive or tweaks!
+
+## Waystones-X (Unofficial Waystones Fork)
 
 ![title_combined](images/waystones_title_combined.png)
 
